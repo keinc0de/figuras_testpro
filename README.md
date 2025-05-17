@@ -4,6 +4,7 @@ usando python para realizar figuras
 
 - lineas
   - horizontal
+  - vertical
 
 en progreso ...
 

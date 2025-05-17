@@ -17,7 +17,9 @@ from draw import Draw # importamos el modulo
 draw = Draw() # instanciamos el objeto
 ```
 
-Para graficar una linea
+Usando `print` para graficar:
+
+### linea horizontal
 
 ```python
 out = draw.line.horizontal(8)
@@ -28,4 +30,24 @@ produce el siguiente resultado:
 
 ```cmd
 ********
+```
+
+### linea vertical
+
+```python
+print(draw.line.vertical(8))
+```
+
+produce el siguiente resultado:
+
+```cmd
+*
+*
+*
+*
+*
+*
+*
+*
+
 ```

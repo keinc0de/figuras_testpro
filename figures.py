@@ -4,6 +4,9 @@ class Line:
 
     def horizontal(self, num:int) -> str:
         return self.simbol * num
+    
+    def vertical(self, num:int) -> str:
+        return f'{self.simbol}\n' * num
    
 
 class Draw:

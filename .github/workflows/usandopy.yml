@@ -1,4 +1,4 @@
-name: test instalando python
+name: test file python
 on: [push, workflow_dispatch]
 
 jobs:
@@ -9,6 +9,9 @@ jobs:
     - name: saludo
       run: echo "Hola Mundo"
 
+    - name: use checkout
+      uses: actions/checkout@v4
+
     - name: test install python
       uses: actions/setup-python@v5
       with:
@@ -16,3 +19,12 @@ jobs:
 
     - name: verifica la version
       run: python --version
+
+    - name: run python test
+      run: python test.py
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: test gen
+        path: salida_test.txt

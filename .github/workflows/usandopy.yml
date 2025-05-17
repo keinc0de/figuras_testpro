@@ -1,5 +1,5 @@
-name: "test basico"
-on: [workflow_dispatch]
+name: test basico
+on: [workflow_dispatch, push]
 
 jobs:
   inicializa:
@@ -8,4 +8,3 @@ jobs:
     steps:
     - name: saludo
       run: echo "Hola Mundo"
-      

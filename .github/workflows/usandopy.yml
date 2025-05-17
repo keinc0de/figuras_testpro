@@ -1,5 +1,5 @@
 name: test basico
-on: [workflow_dispatch, push]
+on: [workflow_dispatch]
 
 jobs:
   inicializa:
@@ -8,3 +8,11 @@ jobs:
     steps:
     - name: saludo
       run: echo "Hola Mundo"
+
+    - name: test install python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: verifica la version
+      run: python --version

@@ -1,0 +1,11 @@
+name: "test basico"
+on: [workflow_dispatch]
+
+jobs:
+  inicializa:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: saludo
+      run: echo "Hola Mundo"
+      
